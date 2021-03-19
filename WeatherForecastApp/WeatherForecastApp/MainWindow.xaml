@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeatherForecastApp"
+        xmlns:viewmodel="clr-namespace:WeatherForecastApp.ViewModel" 
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
     <Grid>
-        
+
+        <TextBlock Text="{Binding Asd}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
     </Grid>
 </Window>
