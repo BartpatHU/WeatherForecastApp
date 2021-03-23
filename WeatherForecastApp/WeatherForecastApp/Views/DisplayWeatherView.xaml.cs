@@ -10,23 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WeatherForecastApp.ViewModel;
 
-namespace WeatherForecastApp
+namespace WeatherForecastApp.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for DisplayWeather.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class DisplayWeatherView : UserControl
     {
-        public MainWindow()
+        public DisplayWeatherView()
         {
-
-             InitializeComponent();
-
+            InitializeComponent();
         }
-
     }
 }

@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherForecastApp.Views
+namespace WeatherForecastApp.Models
 {
-    class FirstView
+    public class WeatherEventArgs : EventArgs
     {
-
-
+        public Root root;
     }
 }

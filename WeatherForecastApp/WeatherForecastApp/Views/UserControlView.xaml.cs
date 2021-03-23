@@ -12,21 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WeatherForecastApp.ViewModel;
 
-namespace WeatherForecastApp
+namespace WeatherForecastApp.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for FormView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UserControlView : UserControl
     {
-        public MainWindow()
+        public UserControlView()
         {
-
-             InitializeComponent();
-
+            InitializeComponent();
         }
-
     }
 }

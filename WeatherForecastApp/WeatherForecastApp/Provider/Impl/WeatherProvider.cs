@@ -20,7 +20,7 @@ namespace WeatherForecastApp.Provider.Impl
         //public Task<string> GetWeather()
         public async Task<Root> GetWeather(string city)
         {
-            return await GetRequest("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=744dcb864b7a357be83e7c6d3adf91f1");
+            return await GetRequest("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=e9133857cc6a6f59b88d6ad6d066faf3");
         }
 
         async Task<Root> GetRequest(string url)

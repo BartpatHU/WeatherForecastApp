@@ -82,12 +82,26 @@
     <Compile Include="Models\Root.cs" />
     <Compile Include="Models\Sys.cs" />
     <Compile Include="Models\Weather.cs" />
+    <Compile Include="Models\WeatherEventArgs.cs" />
     <Compile Include="Models\Wind.cs" />
     <Compile Include="Provider\Impl\WeatherProvider.cs" />
     <Compile Include="Provider\IWeatherProvider.cs" />
+    <Compile Include="ViewModel\DisplayWeatherViewModel.cs" />
+    <Compile Include="ViewModel\IDisplayWeatherViewModel.cs" />
+    <Compile Include="ViewModel\IUserControlViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\UserControlViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
-    <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Views\DisplayWeatherView.xaml.cs">
+      <DependentUpon>DisplayWeatherView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControlView.xaml.cs">
+      <DependentUpon>UserControlView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\DisplayWeatherView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -100,6 +114,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\UserControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -19,6 +19,9 @@ namespace WeatherForecastApp.ViewModel
             SimpleIoc.Default.Register<IWeatherProvider, WeatherProvider>();
             SimpleIoc.Default.Register<IJsonConverter, JsonConverter>();
 
+            SimpleIoc.Default.Register<IDisplayWeatherViewModel, DisplayWeatherViewModel>();
+            SimpleIoc.Default.Register<IUserControlViewModel,UserControlViewModel>();
+
             SimpleIoc.Default.Register<MainViewModel>();
         }
 
@@ -29,7 +32,8 @@ namespace WeatherForecastApp.ViewModel
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
             }
         }
-        
+
+
         public static void Cleanup()
         {
 

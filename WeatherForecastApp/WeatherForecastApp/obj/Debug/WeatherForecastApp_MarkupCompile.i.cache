@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\PROJECTS\WeatherForecastApp\WeatherForecastApp\App.xaml
-11151548125
+31184445710
 
-20-2016088044
+262068602684
 124823689305
-MainWindow.xaml;
+Views\DisplayWeatherView.xaml;MainWindow.xaml;Views\UserControlView.xaml;
 
 True
 

@@ -4,13 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeatherForecastApp"
-        xmlns:viewmodel="clr-namespace:WeatherForecastApp.ViewModel" 
+        xmlns:viewmodel="clr-namespace:WeatherForecastApp.ViewModel"
+        xmlns:view="clr-namespace:WeatherForecastApp.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
-    <Grid>
+        Title="Weather Forecast Application" Height="400" Width="400"
+        DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
+        >
+    <Grid Background="AliceBlue">
 
-        <TextBlock Text="{Binding Asd}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-
+        <StackPanel Orientation="Vertical" Margin="0">
+            <view:UserControlView DataContext="{Binding UserControl}"></view:UserControlView>
+            <view:DisplayWeatherView Margin="0,-200,0,0" DataContext="{Binding DisplayWeather}"></view:DisplayWeatherView>
+        </StackPanel>
+ 
     </Grid>
+
 </Window>
